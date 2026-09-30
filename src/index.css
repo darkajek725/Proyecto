@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide everything by default when printing */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Only show the active printable ficha técnica or driver dossier */
+  #printable-ficha-tecnica,
+  #printable-ficha-tecnica *,
+  #printable-driver-dossier,
+  #printable-driver-dossier * {
+    visibility: visible;
+  }
+
+  #printable-ficha-tecnica,
+  #printable-driver-dossier {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  /* Ensure background colors and borders print faithfully */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: letter;
+    margin: 8mm;
+  }
+}

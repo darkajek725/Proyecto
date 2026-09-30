@@ -1,0 +1,6 @@
+{
+  "name": "TransPortal - Transporte Especial",
+  "description": "Plataforma oficial de publicación, contratación y gestión de servicios de transporte especial en Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
